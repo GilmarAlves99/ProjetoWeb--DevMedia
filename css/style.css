@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.container {
+    height: 2720px;
+    background-color: aqua;
+    max-width: 1366px;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.barraLogo {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 52px;
+}
+
+img.location {
+    float: left;
+    width: 30px;
+    padding: 0 10px;
+    height: 30px;
+}
+
+h1 {
+    float: left;
+    color: #eb4832;
+}
+
+img.lupa {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+}
+
+.fotoFundo {
+    background-image: url('/imagens/london.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+    background-color: #f00000;
+}
+
+.painelCentral {
+    background-color: #3d2222;
+    height: 260px;
+    width: 70%;
+}
+
+.topoOpcao {
+    display: flex;
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+}
+
+.topoOpcao>:first-child {
+    background-color: #f44236;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 40px;
+    background-color: #000000;
+}
+
+.formulario {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.formulario h1 {
+    margin: 20px;
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+form {
+    margin: 15px;
+    float: left;
+    width: 100%;
+}
+
+form input {
+    width: 390px;
+    height: 40px;
+    border: solid rgb(172, 172, 172) 1px;
+}
+
+form label,
+input {
+    font-size: 15px;
+}
+
+input::placeholder {
+    padding: 0 5px;
+}
+
+input:nth-child(5) {
+    margin: 40px 40px;
+    float: left;
+    color: #fff;
+    background-color: #616160;
+}
+
+.conteudo {
+    max-width: 1070px;
+    margin: auto;
+    height: 74.56%;
+    background-color: #eaeaea;
+}
+
+.pagina2 {
+    width: 100%;
+    height: 1120px;
+    background-color: #000000;
+}
+
+.pagina2 h2 {
+    position: relative;
+    text-align: left;
+    top: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.pagina2 h4 {
+    text-align: left;
+    position: relative;
+    top: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.page {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    height: 400px;
+    display: grid;
+    grid-template-areas: "fotoP nav2 nav3" "fotoP main4 main5";
+    grid-template-rows: 200px 0px 0px;
+    grid-template-columns: 545px 270px 254px;
+}
+
+.page>header p {
+    text-align: left;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 92%;
+    text-shadow: #000000 0px 0px 5px;
+    font-weight: bolder;
+}
+
+.page>nav.nav2 p,
+nav.nav3 p,
+main.main4 p,
+main.main5 p {
+    font-weight: bolder;
+    text-align: left;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 85%;
+    text-shadow: #000000 0px 0px 5px;
+}
+
+.page>header {
+    grid-area: fotoP;
+    height: 390px;
+    background-image: url('/imagens/cinqueterre.jpg');
+    background-size: 525px;
+    background-repeat: no-repeat;
+}
+
+.page>nav.nav2 {
+    height: 190px;
+    width: 255px;
+    grid-area: nav2;
+    background-image: url('/imagens/newyork.jpg');
+    background-size: 255px;
+    background-repeat: no-repeat;
+}
+
+.page>nav.nav3 {
+    height: 190px;
+    width: 255px;
+    grid-area: nav3;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-image: url('/imagens/sanfran.jpg');
+}
+
+.page>main.main4 {
+    grid-area: main4;
+    height: 190px;
+    width: 255px;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-image: url('/imagens/pisa.jpg');
+}
+
+.page>main.main5 {
+    grid-area: main5;
+    height: 190px;
+    width: 255px;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-image: url('/imagens/paris.jpg');
+}
+
+.norway {
+    background-color: rebeccapurple;
+    width: 525px;
+    float: left;
+    height: 450px;
+    position: relative;
+    top: 200px;
+}
+
+.ocean {
+    width: 100%;
+    height: 260px;
+}
+
+.austria {
+    float: right;
+    background-color: rebeccapurple;
+    width: 525px;
+    height: 450px;
+    position: relative;
+    top: 200px;
+}
+
+.email {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    background-color: #616160;
+}
+
+.contato {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    top: 20px;
+    background-color: #e7e707;
+}
+
+footer {
+    position: relative;
+    background-color: #eb4832;
+    height: 9.7%;
+    width: 100%;
+}
