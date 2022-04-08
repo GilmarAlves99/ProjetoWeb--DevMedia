@@ -6,7 +6,6 @@ body {
 }
 
 .conteudoTotal {
-    background-color: blueviolet;
     height: 2720px;
 }
 
@@ -55,46 +54,106 @@ div.Lupaimg img {
 }
 
 div.fotoComForm {
-    background-color: rgba(255, 0, 0, 0.582);
     width: 100%;
     height: 638px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("/imagens/london.jpg");
+    background-repeat: no-repeat
 }
 
 div.conteudoForm {
-    display: flex;
     width: 890px;
+    position: relative;
     height: 260px;
-    background-color: blueviolet;
+    background-color: #fff;
 }
 
-div.menus1 {
+div.menus {
+    width: 100%;
     display: flex;
-    flex: 1;
-    height: 40px;
-    background-color: rgb(194, 221, 221);
 }
 
-div.menus2 {
-    display: flex;
-    flex: 1;
-    height: 40px;
-    background-color: rgb(46, 231, 231);
+div.menus1:first-child {
+    background-color: red;
 }
 
+div.menus div>i {
+    position: relative;
+    right: 10px;
+    font-size: 20px;
+}
+
+div.menus1,
+div.menus2,
 div.menus3 {
     display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
     height: 40px;
-    background-color: rgb(36, 173, 173);
+    color: #ffffff;
+    background-color: #000;
+}
+
+div.formulario {
+    padding: 0 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #616161;
+}
+
+h1.formulariotext {
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+div.partes {
+    display: inline-block;
+}
+
+div.primeiraParte {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+div.segundaParte {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+form input {
+    border-style: solid;
+    border-width: 1px;
+    /* 25px top, 10px right, 4px bottom and 35px left */
+    width: 420px;
+    height: 40px;
+    outline: 0;
+}
+
+form input::placeholder {
+    position: relative;
+    left: 25px;
+}
+
+button {
+    background-color: #616161;
+    border: 0;
+    color: #fff;
+    width: 180px;
+    height: 40px;
+    margin: 10px 0;
 }
 
 div.conteudofotos {
     width: 100%;
     height: 2030px;
-    background-color: blue;
+    background-color: #f1f1f1;
 }
 
 div.conteudomeio {
@@ -102,4 +161,52 @@ div.conteudomeio {
     height: 100%;
     background-color: chartreuse;
     margin: auto;
+}
+
+div.cidades {
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: " cinque new san" "cinque pisa paris";
+    grid-template-rows: 210px;
+    grid-template-columns: 550px 270px 270px;
+}
+
+.cinque {
+    grid-area: cinque;
+    width: 540px;
+    background-image: url("/imagens/cinqueterre.jpg");
+}
+
+.newYork {
+    background-image: url("/imagens/newyork.jpg");
+    background-size: 255px;
+    width: 250px;
+    height: 190px;
+    grid-area: new;
+}
+
+.pisa {
+    width: 250px;
+    height: 190px;
+    grid-area: pisa;
+    background-image: url("/imagens/pisa.jpg");
+    background-size: 255px;
+}
+
+.sanFrancisco {
+    width: 250px;
+    height: 190px;
+    grid-area: san;
+    background-image: url("/imagens/sanfran.jpg");
+    background-size: 255px;
+}
+
+.paris {
+    width: 250px;
+    height: 190px;
+    grid-area: paris;
+    background-image: url("/imagens/paris.jpg");
+    background-size: 255px;
 }
