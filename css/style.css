@@ -3,6 +3,7 @@ body {
     background-color: #f1f1f1;
     margin: 0;
     padding: 0;
+    font-family: 'Raleway';
 }
 
 .conteudoTotal {
@@ -59,7 +60,7 @@ div.fotoComForm {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/imagens/london.jpg");
+    background-image: url("../imagens/london.jpg");
     background-repeat: no-repeat
 }
 
@@ -112,6 +113,7 @@ h1.formulariotext {
 }
 
 div.partes {
+    font-weight: bold;
     display: inline-block;
 }
 
@@ -129,8 +131,7 @@ div.segundaParte {
 
 form input {
     border-style: solid;
-    border-width: 1px;
-    /* 25px top, 10px right, 4px bottom and 35px left */
+    border: 1px solid #b8b8b8;
     width: 420px;
     height: 40px;
     outline: 0;
@@ -165,7 +166,6 @@ div.conteudofotos {
 .cidadesPrincipais {
     position: relative;
     margin: 10px 0;
-    font-family: 'Raleway';
 }
 
 .cidadesPrincipais p {
@@ -183,7 +183,7 @@ div.cidades {
     width: 100%;
     height: 400px;
     display: grid;
-    grid-template-areas: " cinque new san" "cinque pisa paris";
+    grid-template-areas: "cinque new san" "cinque pisa paris";
     grid-template-rows: 210px;
     grid-template-columns: 555px 265px 270px;
 }
@@ -197,7 +197,6 @@ div.cidades {
     position: relative;
     color: #fff;
     left: 20px;
-    font-family: 'Raleway';
     font-weight: 600;
 }
 
@@ -216,12 +215,12 @@ div.cidades {
 .cinque {
     grid-area: cinque;
     width: 540px;
-    background-image: url("/imagens/cinqueterre.jpg");
+    background-image: url("../imagens/cinqueterre.jpg");
     background-size: 540px;
 }
 
 .newYork {
-    background-image: url("/imagens/newyork.jpg");
+    background-image: url("../imagens/newyork.jpg");
     background-size: 255px;
     width: 250px;
     height: 190px;
@@ -232,7 +231,7 @@ div.cidades {
     width: 250px;
     height: 190px;
     grid-area: pisa;
-    background-image: url("/imagens/pisa.jpg");
+    background-image: url("../imagens/pisa.jpg");
     background-size: 255px;
 }
 
@@ -240,7 +239,7 @@ div.cidades {
     width: 250px;
     height: 190px;
     grid-area: san;
-    background-image: url("/imagens/sanfran.jpg");
+    background-image: url("../imagens/sanfran.jpg");
     background-size: 255px;
 }
 
@@ -248,7 +247,7 @@ div.cidades {
     width: 250px;
     height: 190px;
     grid-area: paris;
-    background-image: url("/imagens/paris.jpg");
+    background-image: url("../imagens/paris.jpg");
     background-size: 255px;
 }
 
@@ -267,7 +266,6 @@ div.cidades {
 .titulo h1,
 .titulo h2 {
     position: relative;
-    font-family: 'Raleway';
 }
 
 .titulo h1 {
@@ -302,7 +300,6 @@ div.cidades {
 .sobre h1,
 .sobre h3,
 .sobre h4 {
-    font-family: 'Raleway';
     margin: 0px;
     padding: 12px 20px;
 }
@@ -326,50 +323,133 @@ div.cidades {
     height: 265px;
 }
 
-
-/*
-.natureza {
+.formEmail {
     position: relative;
+    background-color: #606060;
     width: 100%;
-    height: 600px;
-    background-color: #c4c4c4;
+    height: 255px;
+    top: 35px;
 }
 
-.localidade {
+.conteudoFormEmail {
+    position: relative;
+    padding: 10px 15px;
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.conteudoFormEmail h1 {
+    font-size: 2.1em;
+}
+
+.conteudoFormEmail h3 {
+    font-size: 1.1em;
+}
+
+.conteudoFormEmail form {
+    display: grid;
+    width: auto;
+}
+
+.conteudoFormEmail form label {
+    font-size: 1em;
+}
+
+.conteudoFormEmail form input {
+    width: 1035px;
+    height: 40px;
+}
+
+.conteudoFormEmail input::placeholder {
+    color: #b8b8b8;
+    left: 20px;
+}
+
+.conteudoFormEmail form button {
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    background-color: #f48981;
+}
+
+.contato {
+    position: relative;
+    top: 65px;
+    height: 430px;
+    width: auto;
+}
+
+.contatoopcoes {
+    position: relative;
+    top: -20px;
+    display: grid;
+    color: #000;
+    font-weight: bolder;
+}
+
+.contatoopcoes h1 {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.opc {
+    position: relative;
+    top: 0px;
+    line-height: 20px;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.opc i {
+    margin-right: 15px;
+}
+
+.contato form {
+    display: grid;
+    position: relative;
+    top: -10px;
+}
+
+.contato form input {
+    position: relative;
+    margin-bottom: 15px;
+    border: 1px solid #b8b8b8;
+    width: auto;
+    height: 55px;
+}
+
+.contato form input::placeholder {
+    left: 15px;
+}
+
+.contato form button {
+    position: relative;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000;
+    width: 162px;
+    height: 47px;
+    top: -10px;
+}
+
+footer {
     display: flex;
-    width: 100%;
-    height: 455px;
-    background-color: aquamarine;
-    justify-content: space-between;
-}
-
-.localidadeOcean {
-    width: 530px;
-    height: 455px;
-}
-
-.sobre {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 67px;
     position: relative;
-    margin: -10px 0px;
+    height: 200px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #868686;
 }
 
-.sobre h3 {
-    position: relative;
-    left: 100px;
+.redes i {
+    font-size: 20px;
+    color: rgb(121, 121, 121);
 }
 
-img.ocean {
-    width: 100%;
-    height: 260px;
+footer span {
+    text-decoration: underline;
 }
-
-.localidademountains {
-    width: 530px;
-    height: 455px;
-    background-color: #fff;
-}
-
-img.mountains {
-    width: 100%;
-    height: 260px;
-}*/
