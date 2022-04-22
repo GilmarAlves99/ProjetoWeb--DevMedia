@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 body {
-    background-color: rgb(187, 187, 187);
+    background-color: #f1f1f1;
     margin: 0;
     padding: 0;
 }
@@ -150,33 +150,74 @@ button {
     margin: 10px 0;
 }
 
+div.conteudomeio {
+    width: 1070px;
+    height: 100%;
+    margin: auto;
+}
+
 div.conteudofotos {
     width: 100%;
     height: 2030px;
     background-color: #f1f1f1;
 }
 
-div.conteudomeio {
-    width: 1070px;
-    height: 100%;
-    background-color: chartreuse;
-    margin: auto;
+.cidadesPrincipais {
+    position: relative;
+    margin: 10px 0;
+    font-family: 'Raleway';
+}
+
+.cidadesPrincipais p {
+    font-weight: 900;
+    font-size: 1.2em;
+    color: #585555;
+}
+
+strong.porcentagem {
+    color: #000;
+    font-weight: 900;
 }
 
 div.cidades {
     width: 100%;
     height: 400px;
-    background-color: aqua;
     display: grid;
     grid-template-areas: " cinque new san" "cinque pisa paris";
     grid-template-rows: 210px;
-    grid-template-columns: 550px 270px 270px;
+    grid-template-columns: 555px 265px 270px;
+}
+
+.cinque p,
+.newYork p,
+.pisa p,
+.sanFrancisco p,
+.paris p {
+    font-size: 1.1rem;
+    position: relative;
+    color: #fff;
+    left: 20px;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+
+.cinque p {
+    bottom: -350px;
+}
+
+.newYork p,
+.pisa p,
+.sanFrancisco p,
+.paris p {
+    left: 20px;
+    bottom: -145px;
 }
 
 .cinque {
     grid-area: cinque;
     width: 540px;
     background-image: url("/imagens/cinqueterre.jpg");
+    background-size: 540px;
 }
 
 .newYork {
@@ -210,3 +251,125 @@ div.cidades {
     background-image: url("/imagens/paris.jpg");
     background-size: 255px;
 }
+
+.natureza {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 568px;
+}
+
+.titulo {
+    width: 100%;
+    height: 115px;
+}
+
+.titulo h1,
+.titulo h2 {
+    position: relative;
+    font-family: 'Raleway';
+}
+
+.titulo h1 {
+    font-size: 1.9em;
+    top: 10px;
+}
+
+.titulo h2 {
+    font-size: 1.2em;
+    top: 10px;
+}
+
+.lugares {
+    display: flex;
+    justify-content: space-between;
+    height: 455px;
+    width: 100%;
+}
+
+.conteudoLugares {
+    background-color: #ffffff;
+    width: 525px;
+    height: 100%;
+}
+
+.sobre {
+    position: relative;
+    top: -4px;
+    height: 190px;
+}
+
+.sobre h1,
+.sobre h3,
+.sobre h4 {
+    font-family: 'Raleway';
+    margin: 0px;
+    padding: 12px 20px;
+}
+
+.sobre h1 {
+    font-size: 1.5em;
+}
+
+.sobre h3 {
+    font-size: 0.95em;
+    margin-left: 20px;
+}
+
+.sobre h4.valor {
+    font-size: 1em;
+    color: #868686;
+}
+
+.imgLugar {
+    width: 100%;
+    height: 265px;
+}
+
+
+/*
+.natureza {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #c4c4c4;
+}
+
+.localidade {
+    display: flex;
+    width: 100%;
+    height: 455px;
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+
+.localidadeOcean {
+    width: 530px;
+    height: 455px;
+}
+
+.sobre {
+    position: relative;
+    margin: -10px 0px;
+}
+
+.sobre h3 {
+    position: relative;
+    left: 100px;
+}
+
+img.ocean {
+    width: 100%;
+    height: 260px;
+}
+
+.localidademountains {
+    width: 530px;
+    height: 455px;
+    background-color: #fff;
+}
+
+img.mountains {
+    width: 100%;
+    height: 260px;
+}*/
